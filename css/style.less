@@ -1,21 +1,41 @@
 @header-bg: #324b5a;
-@header-text-bg: white;
-@post-header-bg: #ffe164;
+@header-text-bg: #324b5a;
+@post-header-bg: #c769ff;
+@header-btn-color: #6ac1ff;
 @main-bg: #e6e6e6;
 @main-content-bg: white;
 @footer-bg: #324b5a;
 @footer-copy-bg: #1b2937;
-@overlay-height: 6rem;
+@overlay-height: 5rem;
 @text-footer-h: #237da0;
 @text-footer: white;
-
+@custom-font: CamptonW00-Book;
 
 /*
 general
 */
 
+
+
+
+
+@font-face {
+  font-family: "CamptonW00-Book";
+  src: url("//db.onlinewebfonts.com/t/c256e88ad8cfdaf15f00416a8d0907a8.eot");
+  src: url("//db.onlinewebfonts.com/t/c256e88ad8cfdaf15f00416a8d0907a8.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/c256e88ad8cfdaf15f00416a8d0907a8.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/c256e88ad8cfdaf15f00416a8d0907a8.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/c256e88ad8cfdaf15f00416a8d0907a8.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/c256e88ad8cfdaf15f00416a8d0907a8.svg#CamptonW00-Book") format("svg");
+}
+
+@font-face {
+  font-family: "CoarseRounded";
+  src: url("../fonts/CoarseRounded.otf") format("opentype");
+}
+
 body {
-  font-size: 16px;
+  font-family: CamptonW00-Book;
   background-color: @main-bg;
 }
 
@@ -23,7 +43,16 @@ body {
   margin: 0;
 }
 
+.slider .slides {
+  background: none;
+}
 
+.slider .slides li .caption h3 {
+  color: #1e3746;
+  font-size: 5rem;
+  font-weight: 600;
+  text-align: center;
+}
 
 /*
 landing-page
@@ -34,7 +63,7 @@ landing-page
   header {
     background-color: @post-header-bg;
     position: relative;
-    z-index: -2;
+    min-height: 45rem;
 
     &:after {
       position: absolute;
@@ -48,15 +77,17 @@ landing-page
     }
 
     .header {
-      background-color: @footer-bg;
+      /*background-color: @footer-bg;*/
+      font-family: CoarseRounded;
       color: @header-text-bg;
       font-size: 2rem;
-      padding: 1em;
+      padding: 1rem 0 1rem 5rem;
     }
 
     .post-header-text {
-      font-size: 3rem;
-      padding: 2.5em 0 1.5em 0;
+      font-size: 5rem;
+      font-weight: 600;
+      padding: 5rem 0 5rem 0;
     }
 
     .post-header-buttons {
@@ -64,57 +95,53 @@ landing-page
       padding: 0 0 1em 0;
 
       a {
-        padding: 1.3rem;
-        background-color: #64d7d7;
+        width: 30%;
+        background-color: @header-btn-color;
         color: #1e3746;
         border-radius: 5px;
         cursor: pointer;
-        -webkit-transition: all 0.1s;
-        -moz-transition: all 0.1s;
-        -ms-transition: all 0.1s;
-        -o-transition: all 0.1s;
-        transition: all 0.1s;
+      }
 
-        &:after {
-          position: absolute;
-          bottom: 4px;
-          border: 12px solid #50c3c3;
-          -webkit-transition: all 0.1s;
-          -moz-transition: all 0.1s;
-          -ms-transition: all 0.1s;
-          -o-transition: all 0.1s;
-          transition: all 0.1s;
-        }
+      .download-btn {
+        padding: 1rem;
+        font-size: 1.5rem;
+        height: auto;
+        text-transform: none;
+      }
+
+      .custom-icon {
+        font-size: 2rem;
       }
     }
   }
 
   main {
-    z-index: -2;
-    padding: 0 20px;
+    padding: 0 6rem;
     overflow: visible;
 
     .description {
       z-index: 0;
+      font-size: 3rem;
       overflow: visible;
       background-color: @main-content-bg;
 
       .description-text {
-        padding: 2em;
+        padding: 2rem;
         color: @header-bg;
       }
+    }
 
-      .visual-description {
+    .visual-description {
+      padding: 2rem;
 
-        .img-wrapper {
-          padding: 1em 0 0 0;
-        }
+      .img-wrapper {
+        padding: 1em 0 0 0;
+      }
 
-        .caption {
-          color: @text-footer-h;
-          font-size: 1.5rem;
-          padding: 1em 0;
-        }
+      .caption {
+        color: @text-footer-h;
+        font-size: 1.5rem;
+        padding: 1em 0;
       }
     }
   }
@@ -123,40 +150,28 @@ landing-page
     background-color: @footer-bg;
     color: @text-footer;
     position: relative;
-    z-index: -2;
-
-    &:before {
-      position: absolute;
-      display: block;
-      width: 100%;
-      content: "";
-      z-index: -1;
-      height: @overlay-height;
-      top: -@overlay-height;
-      background: @footer-bg;
-    }
 
     .footer-title {
       font-size: 2.5rem;
-      padding: 1em 0 1rem 1em;
+      padding: 1em 0 1em 1rem;
       color: @text-footer-h;
     }
 
     .footer-description {
-      padding: 1rem 0 1rem 2.5rem;
+      padding: 1em 0 1em 2.5rem;
     }
 
     .contacts {
       color: @text-footer-h;
       font-size: 2rem;
-      padding: 3rem 0 2rem 2.5rem;
+      padding: 3em 0 2em 2.5rem;
     }
 
     .contacts-links {
       padding: 0 0 1em 0;
 
       a {
-        padding: 0 0 0.5rem 2.5rem;
+        padding: 0 0 0.5em 2.5rem;
       }
     }
 
@@ -165,7 +180,7 @@ landing-page
 
       .container {
         color: @text-footer-h;
-        padding: 1.5rem 2rem;
+        padding: 1.5em 2rem;
 
         a {
           color: @text-footer-h;
