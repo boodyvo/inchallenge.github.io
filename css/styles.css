@@ -1,0 +1,390 @@
+@font-face {
+  font-family: "CamptonW00-Book";
+  src: url("//db.onlinewebfonts.com/t/c256e88ad8cfdaf15f00416a8d0907a8.eot");
+  src: url("//db.onlinewebfonts.com/t/c256e88ad8cfdaf15f00416a8d0907a8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c256e88ad8cfdaf15f00416a8d0907a8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c256e88ad8cfdaf15f00416a8d0907a8.woff") format("woff"), url("//db.onlinewebfonts.com/t/c256e88ad8cfdaf15f00416a8d0907a8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c256e88ad8cfdaf15f00416a8d0907a8.svg#CamptonW00-Book") format("svg");
+}
+@font-face {
+  font-family: "CamptonBold";
+  src: url("../fonts/CamptonBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "CamptonLight";
+  src: url("../fonts/CamptonLight.otf") format("opentype");
+}
+@font-face {
+  font-family: "CoarseRounded";
+  src: url("../fonts/CoarseRounded.otf") format("opentype");
+}
+body {
+  font-family: CamptonW00-Book;
+  background-color: #e6e6e6;
+}
+.row {
+  margin: 0;
+}
+.slider .slides {
+  background: none;
+}
+.slider .slides li .caption h3 {
+  color: #1e3746;
+  font-size: 5rem;
+  font-weight: 600;
+  text-align: center;
+}
+/*
+landing-page
+*/
+#landing-page header {
+  background-color: #7D71D8;
+  position: relative;
+  min-height: 45rem;
+}
+#landing-page header:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  content: "";
+  height: 5rem;
+  bottom: -5rem;
+  background: #7D71D8;
+}
+#landing-page header .header {
+  /*background-color: @footer-bg;*/
+  font-family: CamptonLight;
+  color: #324b5a;
+  font-size: 2rem;
+  padding: 1rem 0 1rem 5rem;
+}
+#landing-page header .post-header-text {
+  font-size: 5rem;
+  font-weight: 600;
+  padding: 5rem 0 5rem 0;
+}
+#landing-page main {
+  padding: 0 1rem;
+  overflow: visible;
+  position: relative;
+}
+#landing-page main .description {
+  z-index: 10;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  overflow: visible;
+  padding-bottom: 8rem;
+  background-color: white;
+}
+#landing-page main .description .description-text {
+  padding: 8rem 4rem 4rem 4rem;
+  color: #324b5a;
+}
+#landing-page main .description .description-soon {
+  padding: 0 4rem 2rem 4rem;
+}
+#landing-page main .description .post-header-buttons {
+  font-size: 1.5rem;
+  padding: 0 0 1em 0;
+  position: relative;
+}
+#landing-page main .description .post-header-buttons a {
+  position: absolute;
+  width: 45%;
+  background-color: #FFB640;
+  color: #1e3746;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#landing-page main .description .post-header-buttons a:first-child {
+  left: 0;
+}
+#landing-page main .description .post-header-buttons a:last-child {
+  right: 0;
+}
+#landing-page main .description .post-header-buttons .download-btn {
+  padding: 1rem;
+  font-size: 1.5rem;
+  height: auto;
+  text-transform: none;
+}
+#landing-page main .description .post-header-buttons .custom-icon {
+  font-size: 2rem;
+}
+#landing-page main .video-block {
+  z-index: 10;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  margin-bottom: 5rem;
+  height: 0;
+  overflow: hidden;
+}
+#landing-page main .video-block iframe,
+#landing-page main .video-block object,
+#landing-page main .video-block embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#landing-page main .visual-description {
+  margin: 5rem 0;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+  /*background-color: #fff;*/
+}
+#landing-page main .visual-description .visual-description-title {
+  font-family: CamptonLight;
+  font-size: 4rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+#landing-page main .visual-description .card-image {
+  overflow: hidden;
+}
+#landing-page main .visual-description img {
+  min-height: 20rem;
+  transform: scale(1);
+  transition: 1s;
+}
+#landing-page main .visual-description img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+#landing-page main .visual-description .caption {
+  margin-top: 1rem;
+  color: #5D4BD8;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+#landing-page .sphere-description {
+  background-color: #fffe5c;
+  position: relative;
+  margin-bottom: 8rem;
+}
+#landing-page .sphere-description .sphere-description-title {
+  font-family: CamptonLight;
+  font-size: 4rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+#landing-page .sphere-description:before {
+  height: 8rem;
+  top: -8rem;
+  background-color: #fffe5c;
+  content: '';
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+}
+#landing-page .sphere-description:after {
+  height: 8rem;
+  background-color: #fffe5c;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+#landing-page .sphere-description .card {
+  overflow: hidden;
+  border: none;
+  border-radius: 0;
+}
+#landing-page .sphere-description .card img {
+  border: none;
+  border-radius: 0;
+  min-width: 100%;
+  height: 20rem;
+  transform: scale(1);
+  transition: 1s;
+}
+#landing-page .sphere-description .card img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+#landing-page .sphere-description .col {
+  padding: 0;
+  max-height: 20rem;
+}
+#landing-page footer {
+  color: white;
+  position: relative;
+  z-index: 0;
+}
+#landing-page footer:before {
+  height: 10rem;
+  top: -10rem;
+  background-color: #1b2937;
+  content: '';
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+#landing-page footer .footer-copyright {
+  background-color: #1b2937;
+}
+#landing-page footer .footer-copyright .container {
+  height: 10rem;
+  font-size: 3rem;
+  color: #5D4BD8;
+  padding: 0.5em 2rem;
+}
+#landing-page footer .footer-copyright .container a {
+  color: #5D4BD8;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  #landing-page header {
+    background-color: #7D71D8;
+    position: relative;
+    min-height: 45rem;
+  }
+  #landing-page header:after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    content: "";
+    height: 5rem;
+    bottom: -5rem;
+    background: #7D71D8;
+  }
+  #landing-page header .header {
+    font-size: 2rem;
+    padding: 1rem 0 1rem 5rem;
+  }
+  #landing-page header .post-header-text {
+    font-size: 5rem;
+    font-weight: 600;
+    padding: 5rem 0 5rem 0;
+  }
+  #landing-page main {
+    padding: 0 6rem;
+  }
+  #landing-page main .description .post-header-buttons a {
+    position: absolute;
+    width: 30%;
+    background-color: #FFB640;
+    color: #1e3746;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #landing-page main .description .post-header-buttons a:first-child {
+    left: 12%;
+  }
+  #landing-page main .description .post-header-buttons a:last-child {
+    right: 12%;
+  }
+  #landing-page main .description .post-header-buttons .download-btn {
+    padding: 1rem;
+    font-size: 1.5rem;
+    height: auto;
+    text-transform: none;
+  }
+  #landing-page main .description .post-header-buttons .custom-icon {
+    font-size: 2rem;
+  }
+  #landing-page main .video-block {
+    width: 60%;
+    left: 20%;
+    padding-bottom: 35%;
+  }
+  #landing-page main .video-block iframe,
+  #landing-page main .video-block object,
+  #landing-page main .video-block embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .slider .slides li .caption h3 {
+    font-size: 3rem;
+  }
+  #landing-page header .header {
+    font-size: 2rem;
+    padding: 1rem 0 5rem;
+  }
+  #landing-page header .header .title {
+    text-align: center;
+  }
+  #landing-page header .post-header-text {
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 5rem 0 5rem 0;
+  }
+  #landing-page main {
+    padding: 0 1rem;
+  }
+  #landing-page main .description {
+    padding: 1rem;
+  }
+  #landing-page main .description .description-text {
+    padding: 6rem 2rem 4rem 2rem;
+  }
+  #landing-page main .description .post-header-buttons a {
+    position: relative;
+    width: 80%;
+    margin-bottom: 2rem;
+    display: block;
+    background-color: #FFB640;
+    color: #1e3746;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #landing-page main .description .post-header-buttons a:first-child,
+  #landing-page main .description .post-header-buttons a:last-child {
+    left: 10%;
+  }
+  #landing-page main .description .post-header-buttons .download-btn {
+    padding: 1rem;
+    font-size: 1.5rem;
+    height: auto;
+    text-transform: none;
+  }
+  #landing-page main .description .post-header-buttons .custom-icon {
+    font-size: 2rem;
+  }
+  #landing-page main .visual-description .img-wrapper {
+    padding: 1em 0 0 0;
+  }
+  #landing-page main .visual-description img {
+    width: 100%;
+  }
+  #landing-page main .visual-description .caption {
+    margin-top: 1rem;
+    color: #5D4BD8;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 0;
+  }
+  #landing-page footer {
+    color: white;
+    position: relative;
+    z-index: 0;
+  }
+  #landing-page footer:before {
+    height: 10rem;
+    top: -10rem;
+    background-color: #1b2937;
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+  }
+  #landing-page footer .footer-copyright {
+    background-color: #1b2937;
+  }
+  #landing-page footer .footer-copyright .container {
+    height: 10rem;
+    font-size: 3rem;
+    color: #5D4BD8;
+    padding: 0.5em 2rem;
+  }
+  #landing-page footer .footer-copyright .container a {
+    color: #5D4BD8;
+    cursor: pointer;
+  }
+}
