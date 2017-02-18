@@ -17,7 +17,7 @@
 }
 body {
   font-family: CamptonW00-Book;
-  background-color: #e6e6e6;
+  background-color: #fafafa;
 }
 .row {
   margin: 0;
@@ -159,7 +159,7 @@ landing-page
   padding: 1rem 0;
 }
 #landing-page .sphere-description {
-  background-color: #fffe5c;
+  background-color: #FFB640;
   position: relative;
   margin-bottom: 8rem;
 }
@@ -172,7 +172,7 @@ landing-page
 #landing-page .sphere-description:before {
   height: 8rem;
   top: -8rem;
-  background-color: #fffe5c;
+  background-color: #FFB640;
   content: '';
   position: absolute;
   z-index: 0;
@@ -180,7 +180,7 @@ landing-page
 }
 #landing-page .sphere-description:after {
   height: 8rem;
-  background-color: #fffe5c;
+  background-color: #FFB640;
   content: '';
   position: absolute;
   z-index: -1;
