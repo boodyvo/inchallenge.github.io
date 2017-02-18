@@ -16,7 +16,7 @@
   src: url("../fonts/CoarseRounded.otf") format("opentype");
 }
 body {
-  font-family: CamptonW00-Book;
+  font-family: CamptonLight;
   background-color: #fafafa;
 }
 .row {
@@ -50,7 +50,6 @@ landing-page
 }
 #landing-page header .header {
   /*background-color: @footer-bg;*/
-  font-family: CamptonLight;
   color: #324b5a;
   font-size: 2rem;
   padding: 1rem 0 1rem 5rem;
@@ -131,13 +130,11 @@ landing-page
   padding: 0;
   position: relative;
   z-index: 2;
-  /*background-color: #fff;*/
 }
 #landing-page main .visual-description .visual-description-title {
-  font-family: CamptonLight;
-  font-size: 2.5rem;
-  font-weight: 600;
-  padding-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: 400;
+  padding: 4rem 0rem 3rem;
 }
 #landing-page main .visual-description .card-image {
   overflow: hidden;
@@ -164,10 +161,9 @@ landing-page
   margin-bottom: 8rem;
 }
 #landing-page .sphere-description .sphere-description-title {
-  font-family: CamptonLight;
   font-size: 4rem;
-  font-weight: 600;
-  padding-bottom: 1rem;
+  font-weight: 400;
+  padding: 1rem 0 3rem 0;
 }
 #landing-page .sphere-description:before {
   height: 8rem;
@@ -348,6 +344,9 @@ landing-page
   #landing-page main .description .post-header-buttons .custom-icon {
     font-size: 2rem;
   }
+  #landing-page main .visual-description .visual-description-title {
+    font-size: 2.5rem;
+  }
   #landing-page main .visual-description .img-wrapper {
     padding: 1em 0 0 0;
   }
@@ -367,10 +366,7 @@ landing-page
     margin-bottom: 8rem;
   }
   #landing-page .sphere-description .sphere-description-title {
-    font-family: CamptonLight;
     font-size: 2.5rem;
-    font-weight: 600;
-    padding-bottom: 1rem;
   }
   #landing-page footer {
     color: white;
