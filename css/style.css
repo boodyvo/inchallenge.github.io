@@ -128,14 +128,14 @@ landing-page
 }
 #landing-page main .visual-description {
   margin: 5rem 0;
-  padding: 2rem;
+  padding: 0;
   position: relative;
   z-index: 2;
   /*background-color: #fff;*/
 }
 #landing-page main .visual-description .visual-description-title {
   font-family: CamptonLight;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 600;
   padding-bottom: 1rem;
 }
@@ -143,7 +143,7 @@ landing-page
   overflow: hidden;
 }
 #landing-page main .visual-description img {
-  min-height: 20rem;
+  width: 100%;
   transform: scale(1);
   transition: 1s;
 }
@@ -305,7 +305,7 @@ landing-page
   }
   #landing-page header .header {
     font-size: 2rem;
-    padding: 1rem 0 5rem;
+    padding: 0 0 3rem;
   }
   #landing-page header .header .title {
     text-align: center;
@@ -323,6 +323,7 @@ landing-page
   }
   #landing-page main .description .description-text {
     padding: 6rem 2rem 4rem 2rem;
+    font-size: 1.6rem;
   }
   #landing-page main .description .post-header-buttons a {
     position: relative;
@@ -359,6 +360,17 @@ landing-page
     font-size: 2rem;
     font-weight: 600;
     padding: 1rem 0;
+  }
+  #landing-page .sphere-description {
+    background-color: #FFB640;
+    position: relative;
+    margin-bottom: 8rem;
+  }
+  #landing-page .sphere-description .sphere-description-title {
+    font-family: CamptonLight;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
   }
   #landing-page footer {
     color: white;
